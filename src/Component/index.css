@@ -1,0 +1,120 @@
+.raisely-form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.raisely-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.raisely-form label.email {
+    display: flex;
+    justify-content: space-between;
+}.raisely-form label.email button {
+    color: white;
+    border: 1px solid transparent;
+    background-color: green;
+    border-radius: 10px 0 0 0;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
+}.raisely-form label.email button:hover { background-color: darkgreen; }
+.raisely-form input {
+    background-color: wheat;
+    padding: 7px 0;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+}.raisely-form input:hover { border-color: rgb(128, 126, 126); }
+.raisely-form input:focus { background-color: #fff; }
+
+.edit-spinner {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    color: green;
+}.edit-spinner i {
+    font-size: 16px;
+    -moz-animation: rotating 2s linear infinite;
+    -webkit-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+.raisely-success {
+    color: forestgreen;
+    text-align: center;
+    margin-bottom: 20px;
+}.raisely-error {
+    color: brown;
+    text-align: center;
+    margin-bottom: 20px;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -moz-animation: shackIt 2s linear infinite;
+    -webkit-animation: shackIt 2s linear infinite;
+    -o-animation: shackIt 2s linear infinite;
+    animation: shackIt 2s linear infinite;
+}
+/* submit btn */
+.raisely-submit {
+    color: #fff;
+    background-color: black;
+    height: 32px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}.raisely-submit:hover { background-color: rgb(48, 47, 47); }
+
+
+@-webkit-keyframes shackIt /* Safari and Chrome */ {
+    from {
+        padding-left: 10px;
+    }
+    to {
+        padding-left: 0;
+    }
+}
+@keyframes shackIt {
+    from {
+        padding-left: 10px;
+    }
+    to {
+        padding-left: 0;
+    }
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
